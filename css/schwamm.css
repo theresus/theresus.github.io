@@ -77,6 +77,27 @@ h1 {
     font-size: 4rem;
 
     position: relative;
+
+    line-height: 1rem;
+}
+
+h2{
+    font-family: roc-grotesk, sans-serif;
+
+    font-weight: 200;
+    
+    font-style: normal;
+
+    color: white;
+
+    font-size: 3rem;
+
+    position: relative;
+
+
+
+
+
 }
 
 img {
@@ -89,7 +110,9 @@ img {
     position: relative;
 
 
+
 }
+
 
 .menupic {
     width: 20px;
@@ -111,7 +134,25 @@ color: white;
 
 max-width: 400px;
 
-padding: 10px;
+padding: 5px;
+}
+
+
+.impressum {
+    font-family: bilo, sans-serif;
+
+    font-weight: 200;
+    
+    font-style: normal;
+    
+    font-size: 1.5rem;
+    
+    color: white;
+    
+    max-width: 400px;
+
+    line-height: 0em;
+
 }
 
 button {
@@ -268,3 +309,14 @@ details {
   #poster01 {
     padding-top: 80px;
   }
+
+  hr{
+
+    width: 80vw;
+  }
+
+  footer{
+
+    margin-top: 5vh;
+  }
+
