@@ -78,7 +78,8 @@ h1 {
 
     position: relative;
 
-    line-height: 1rem;
+    line-height: 2
+    rem;
 }
 
 h2{
@@ -103,9 +104,9 @@ h2{
 img {
    
 
-    width: 80vw;
+    max-width: 50vw;
 
-    max-width: 400px;
+  
 
     position: relative;
 
@@ -132,9 +133,13 @@ font-size: 2rem;
 
 color: white;
 
-max-width: 400px;
+max-width: 500px;
 
 padding: 5px;
+
+hyphens: auto;
+
+margin-bottom: 40px;
 }
 
 
@@ -155,7 +160,7 @@ padding: 5px;
 
 }
 
-button {
+.button {
 
 font-family: bilo, sans-serif;
 
@@ -187,13 +192,89 @@ background-color: white;
 cursor: pointer;
 }
 
+
+.buttonzitat {
+
+    max-width: 400px;
+
+    font-family: bilo, sans-serif;
+    
+    font-weight: 400;
+    
+    font-style: normal;
+    
+    font-size: 2rem;
+    
+    color: white;
+    
+    background-color: #00060c;
+    
+    padding: 10px;
+ border: none;
+    
+    margin-top: 1vh;
+    
+    }
+
+    .buttonzitat:hover {
+        color: white;
+    
+    background-color: #00060c;
+    
+    cursor: pointer;
+
+    text-decoration: underline;
+    text-underline-position: under;
+    }
+
 a {
     color: black;
 }
 
+.zitatdetails { 
+    max-width: 500px;
+    color: white;
+
+    font-family: roc-grotesk, sans-serif;
+
+    font-weight: 400;
+    
+    font-style: normal;
+    
+    font-size: 2rem;
+
+}
+
+.zitatsummary {
+    color: white;
+
+    font-family: roc-grotesk, sans-serif;
+
+    font-weight: 400;
+    
+    font-style: normal;
+    
+    font-size: 2rem;
+
+}
 
 
-summary {
+ .zitatdetails>.zitatsummary {
+ 
+    list-style: none;
+  }
+  .zitatsummary::-webkit-details-marker {
+    display: none
+  }
+  
+  .zitatsummary::after {
+    content: '...';
+  }
+  .zitatdetails[open] summary:after {
+    content: none;
+  }
+
+.glossarsummary {
     color: white;
 
     font-family: bilo, sans-serif;
@@ -204,7 +285,7 @@ summary {
     
     font-size: 2rem;
 
-}
+}*/
 
 summary:hover {
     cursor: pointer;
