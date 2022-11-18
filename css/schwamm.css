@@ -30,6 +30,11 @@ body {
 }
 
 
+#titelbild {
+
+  max-width: 60vw;
+}
+
 section
 
 {
@@ -101,13 +106,15 @@ h2{
 
 }
 
-img {
+.imgposter {
    
 
 
     max-height: 50vh;
 
     position: relative;
+margin-top:20px;
+margin-bottom: 70px;
 
 
 }
@@ -413,9 +420,7 @@ details {
     display: block;
   }
 
-  #poster01 {
-    padding-top: 80px;
-  }
+ 
 
  .lang {
 
