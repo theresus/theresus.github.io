@@ -78,8 +78,8 @@ h1 {
 
     position: relative;
 
-    line-height: 2
-    rem;
+    line-height: 2em;
+    margin-top: 80px;
 }
 
 h2{
@@ -104,14 +104,10 @@ h2{
 img {
    
 
-   /* max-width: 50vw;*/
 
-   max-height: 50vh;
-
-  
+    max-height: 50vh;
 
     position: relative;
-
 
 
 }
@@ -120,9 +116,10 @@ img {
 .menupic {
     width: 20px;
 
-    margin-left: 0
-    ;
+    margin-left: 0;
 }
+
+
 
 p {
     font-family: bilo, sans-serif;
@@ -142,6 +139,26 @@ padding: 5px;
 hyphens: auto;
 
 margin-bottom: 40px;
+}
+
+
+
+.italic{
+
+  font-style: italic;
+  font-family: bilo, sans-serif;
+
+  font-weight: 400;
+  
+ 
+  
+  font-size: 2rem;
+}
+
+
+.italic:hover {
+
+  color: #f5c62a;
 }
 
 
@@ -197,7 +214,7 @@ cursor: pointer;
 
 .buttonzitat {
 
-    max-width: 400px;
+    max-width: 350px;
 
     font-family: bilo, sans-serif;
     
@@ -215,6 +232,9 @@ cursor: pointer;
  border: none;
     
     margin-top: 1vh;
+
+    text-align: left;
+
     
     }
 
@@ -239,12 +259,15 @@ a {
 
     font-family: roc-grotesk, sans-serif;
 
-    font-weight: 400;
-    
-    font-style: normal;
-    
-    font-size: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  hyphens: auto;
 
+}
+
+.zitatdetails:hover{
+
+  cursor: pointer;
 }
 
 .zitatsummary {
@@ -252,13 +275,14 @@ a {
 
     font-family: roc-grotesk, sans-serif;
 
-    font-weight: 400;
+    font-weight: 800;
     
     font-style: normal;
     
     font-size: 2rem;
 
 }
+
 
 
  .zitatdetails>.zitatsummary {
@@ -393,9 +417,14 @@ details {
     padding-top: 80px;
   }
 
-  hr{
+ .lang {
 
     width: 80vw;
+  }
+
+  .kurz {
+
+    width: 60vw;
   }
 
   footer{
