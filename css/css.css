@@ -20,12 +20,13 @@ img {
     position: absolute;
 }
 
-a {
-    opacity: 0;
+.hoverimg {
+    opacity:0;
 }
 
-a:hover {
-    opacity: 100;
+.hoverimg:hover {
+    opacity:100;
+    cursor: pointer;
 }
 
 h1 {
@@ -33,12 +34,25 @@ h1 {
 }
 
 .infos {
-    height: 500px;
-    position: static;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+
     padding: 20px;
     text-align: center;
+    visibility: hidden;
+    background-color: rgb(211, 211, 211);
 }
 
 .images {
     height: 800px;
+}
+
+.show {
+    visibility: visible;
+}
+
+h2:hover {
+    cursor:pointer;
 }
