@@ -8,106 +8,122 @@
 </head>
 
 <body>
-<div class="container">
+
+    <div class="container">
 
 
-    <div class="child">
+        <div class="child">
+            <h1>Forschung</h1>
+                <div class="images" onclick="openPopup1()">
+                    <img class="defaultimg" src="media/probe1-1.png" alt="">
+    
+                    <img class="hoverimg" src="media/probe1-2.png" alt="">
+                </div>
+        </div>
+    
+    
+        <div class="child">
+            <h1>Outreach</h1>
+                <div class="images" onclick="openPopup2()">
+                    <img class="defaultimg" src="media/probe2-1.png" alt="">
+                    <img class="hoverimg" src="media/probe2-2.png" alt="">
+                </div>
+        </div>
+    
+    
+        <div class="child">
+            <h1>Unterricht</h1>
+                <div class="images" onclick="openPopup3()">
+                    <img class="defaultimg" src="media/probe3-1.png" alt="">
+                    <img class="hoverimg" src="media/probe3-2.png" alt="">
+                </div>
+        </div>   
+    
+    </div>
+    
+    
+    <div id="forschung" class="infos">
         <h1>Forschung</h1>
-            <div class="images" onclick="myFunction()">
-                <img class="defaultimg" src="media/probe1-1.png" alt="">
-
-                <img class="hoverimg" src="media/probe1-2.png" alt="">
-            </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <button onclick="closePopup1()">schliessen</button>
+        
     </div>
-
-
-    <div class="child">
+    
+    <div id="outreach" class="infos">
         <h1>Outreach</h1>
-            <div class="images" onclick="myFunction2()">
-                <img class="defaultimg" src="media/probe2-1.png" alt="">
-                <img class="hoverimg" src="media/probe2-2.png" alt="">
-            </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <button onclick="closePopup2()">schliessen</button>
     </div>
-
-
-    <div class="child">
+    
+    <div id="unterricht" class="infos">
         <h1>Unterricht</h1>
-            <div class="images" onclick="myFunction3()">
-                <img class="defaultimg" src="media/probe3-1.png" alt="">
-                <img class="hoverimg" src="media/probe3-2.png" alt="">
-            </div>
-    </div>   
-
-</div>
-
-
-<div id="forschung" class="infos">
-    <h1>Forschung</h1>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
+        <span class="close">&times;</span>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <p>Infos über Forschung</p>
+        </div>
+        <button onclick="closePopup3()">schliessen</button>
+    
     </div>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-
-</div>
-
-<div id="outreach" class="infos">
-    <h1>Outreach</h1>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-
-</div>
-
-<div id="unterricht" class="infos">
-    <h1>Unterricht</h1>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-    <div class="container">
-        <img src="" alt="">
-        <p>Infos über Forschung</p>
-    </div>
-
-</div>
 
 <script>
-    // When the user clicks on div, open the popup
-    function myFunction() {
-      var popup = document.getElementById("forschung");
-      popup.classList.toggle("show");
-    }
-    function myFunction2() {
-      var popup = document.getElementById("outreach");
-      popup.classList.toggle("show");
-    }
-    function myFunction3() {
-      var popup = document.getElementById("unterricht");
-      popup.classList.toggle("show");
-    }
+let popup1 = document.getElementById("forschung");
 
-    </script>
+function openPopup1(){
+    popup1.classList.add("open-popup");
+}
+function closePopup1(){
+    popup1.classList.remove("open-popup");
+}
+
+let popup2 = document.getElementById("outreach");
+
+function openPopup2(){
+    popup2.classList.add("open-popup");
+}
+function closePopup2(){
+    popup2.classList.remove("open-popup");
+}
+
+let popup3 = document.getElementById("unterricht");
+
+function openPopup3(){
+    popup3.classList.add("open-popup");
+}
+function closePopup3(){
+    popup3.classList.remove("open-popup");
+}
+</script>
 
 
 </body>
