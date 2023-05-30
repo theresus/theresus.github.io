@@ -56,3 +56,17 @@ h1 {
 h2:hover {
     cursor:pointer;
 }
+
+.material {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 30px;
+}
+
+.material-einzeln {
+    display: flex;
+    flex-direction: row;
+}
